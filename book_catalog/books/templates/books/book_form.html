@@ -2,5 +2,5 @@
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">{% if form.instance.pk %}Save changes{% else %}Create{% endif %}</button>
+    <button id="submit" type="submit">{% if form.instance.pk %}Save changes{% else %}Create{% endif %}</button>
 </form>
